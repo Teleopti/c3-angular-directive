@@ -68,7 +68,7 @@ angular.module('gridshore.c3js.chart', [])
                 config.subchart = {"show": true};
             }
             if ($scope.enableZoom && $scope.enableZoom === "true") {
-                config.zoom = {"enabled": true};
+                config.zoom = {"enabled": true, "rescale": true };
             }
             config.axis = $scope.axis;
             if ($scope.xTick) {
